@@ -1,11 +1,16 @@
-# Input
+puts "Enter Size of array:"
 n = gets.to_i
-array = gets.split.map(&:to_i)
+puts "Enter Elements into an array: "
 
-# Find distinct values
-unique_elements = array.uniq #remove duplicates
-distinct_count = array.uniq.size
+array=[]
+n.times do 
+  element = gets.to_i
+  array.push(element)
+end
+unique = array.uniq
+distinct_count = unique.size
 
-# Output the result
-puts unique_elements.inspect
-puts distinct_count
+puts "array is:#{array.inspect}"
+puts "array contains #{distinct_count} distinct values"
+puts "array contains #{unique} unique values"
+

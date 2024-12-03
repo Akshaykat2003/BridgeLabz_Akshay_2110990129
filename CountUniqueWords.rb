@@ -1,10 +1,14 @@
-# Input
+#Wap to coutn unique elements in array
+
+puts "Enter size of array: "
+
 n = gets.to_i
 words = []
-n.times { words << gets.strip }
 
-# Count unique words
-unique_count = words.uniq.size
+n.times do
+  word = gets.strip
+  words << word
+end
 
-# Output the result
-puts unique_count
+puts words.inspect#show array in string format
+puts words.uniq.size

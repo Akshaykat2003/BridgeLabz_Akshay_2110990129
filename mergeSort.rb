@@ -4,14 +4,14 @@ def mergeSort(arr)
   if arr.length<=1
     return arr
   end
-  #spilt the array into two halves
+  
   mid = arr.length/2
   left_arr = arr[0...mid]
   right_arr = arr[mid..-1]
 
   puts "#{left_arr},#{right_arr}"
-  left_sorted = mergeSort(left_arr)# recursively divide left_arr into two halves
-  right_sorted = mergeSort(right_arr)# recursively divide right_arr into two halves
+  left_sorted = mergeSort(left_arr)
+  right_sorted = mergeSort(right_arr)
   return sort(left_sorted,right_sorted)
 end
 
@@ -41,6 +41,7 @@ def sort(left,right)
   end
 return merged
 end
+
 arr = [3,2,4,1,5,7,9,8]
 puts "Before merged : #{arr}"
 mergedArr  = mergeSort(arr)

@@ -1,7 +1,7 @@
 # Input
 string = gets.strip
 
-# Bracket validation using stack
+
 stack = []
 brackets = { ')' => '(', '}' => '{', ']' => '[' }
 valid = true

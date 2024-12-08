@@ -11,7 +11,7 @@ def  fibonacci(n)
   for  i in 2..n
     a,b = b,a+b
   end
-  b# return last number
+  b
 end
 
 puts fibonacci(n)

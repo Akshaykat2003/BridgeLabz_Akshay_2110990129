@@ -17,7 +17,7 @@ for elem in arr
   result<<elem unless result.include?(elem)## Add element if it's not already in 'result' ->unless keyword is opposite to
   #if keyword it adds elem to result if elem is not in result or it return false
 end
-return result
+return result6
 end
 
 puts "Array before removing duplicates: #{arr}"

@@ -11,7 +11,6 @@ end
 for i in 0..arr.length # np
   sum+=i
 end
-
 puts sum
 
 

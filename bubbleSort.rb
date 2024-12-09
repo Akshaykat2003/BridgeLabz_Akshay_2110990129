@@ -12,7 +12,7 @@ puts "Array Before Sorting: #{arr}"
 def bubble_sort(arr)
   n = arr.length
   # Outer loop to traverse the array
-  for i in 0...(n-1)
+  for i in 0..(n-1)
     # Flag to check if any swap is made
     swapped = false
     
